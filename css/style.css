@@ -1,18 +1,1296 @@
-/* Error: expected "{".
- *    ,
- * 19 | #{$base-url}
- *    |             ^
- *    '
- *   scss\_mixins.scss 19:13  @import
- *   scss\main.scss 6:9       root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a    \2577 \a 19 \2502  #{$base-url}\a    \2502              ^\a    \2575 \a   scss\\_mixins.scss 19:13  @import\a   scss\\main.scss 6:9       root stylesheet';
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "TT Travels";
+  src: url("../fonts/TTTravels-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT Travels";
+  src: url("../fonts/TTTravels-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT Travels";
+  src: url("../fonts/TTTravels-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT Travels";
+  src: url("../fonts/TTTravels-DemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT Travels";
+  src: url("../fonts/TTTravels-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Grandis Extended";
+  src: url("../fonts/grandisextended-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Grandis Extended";
+  src: url("../fonts/GrandisExtended-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Actay Wide";
+  src: url("../fonts/ActayWide-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-ExtraBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Unbounded";
+  src: url("../fonts/Unbounded-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Unbounded";
+  src: url("../fonts/Unbounded-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Arkhip";
+  src: url("../fonts/Arkhip-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "NEXT-ART";
+  src: url("../fonts/NEXT-ART_Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "TT Travels", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.wrap {
+  min-width: 320px;
+  max-width: 1440px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 8.5rem;
+  box-sizing: border-box;
+}
+
+.audience-wrap {
+  min-width: 320px;
+  max-width: 1440px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 8.5rem;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: "NEXT ART", sans-serif;
+  color: #191919;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: "TT Travels", sans-serif;
+  color: #191919;
+  font-weight: 700;
+}
+
+p,
+span,
+a {
+  color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 80%;
+  }
+}
+@media (max-width: 1024px) {
+  .wrap {
+    padding: 0 5.5rem;
+    box-sizing: border-box;
+  }
+  .audience-wrap {
+    padding: 0 5.5rem;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 860px) {
+  html {
+    font-size: 70%;
+  }
+  .wrap {
+    padding: 0 4rem;
+    box-sizing: border-box;
+  }
+  .audience-wrap {
+    padding: 0 4rem;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 670px) {
+  html {
+    font-size: 60%;
+  }
+}
+@media (max-width: 580px) {
+  html {
+    font-size: 45%;
+  }
+}
+@media (max-width: 490px) {
+  html {
+    font-size: 90%;
+  }
+  .wrap {
+    padding: 0 1.8rem;
+    box-sizing: border-box;
+  }
+  .audience-wrap {
+    padding: 0 1.8rem;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 380px) {
+  html {
+    font-size: 80%;
+  }
+}
+.about {
+  padding: 4.063rem 0 7.188rem 0;
+  background: url(/tourism/assets/img/tourism-background.png) no-repeat;
+  background-position: right;
+  background-size: contain;
+  width: 100%;
+  object-fit: cover;
+}
+.about__container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.875rem;
+}
+.about-link {
+  width: 11.563rem;
+  height: 3.875rem;
+  text-decoration: none;
+}
+.about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2.625rem;
+}
+.about__text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.813rem;
+}
+.about__text-container h2 {
+  font-size: 3rem;
+}
+.about__text-container h1 {
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+.about__text-wrap p {
+  padding: 1.813rem 2.813rem 1.313rem 2.625rem;
+  background: linear-gradient(to bottom right, #F22532, #F9A246);
+  color: #FFFFFF;
+}
+.about__text-wrap h2 {
+  padding: 0.688rem 1.5rem 0.688rem 2.063rem;
+}
+.about__wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1.813rem;
+}
+.about__wrap a {
+  padding: 0.688rem 2.188rem;
+  text-decoration: none;
+  background: linear-gradient(to bottom right, #F22532, #F9A246);
+  border-radius: 0 4.375rem 4.375rem 1.563rem;
+  max-width: 28.5rem;
+  text-align: center;
+  font-weight: 500;
+  font-size: 32px;
+}
+.about__wrap a:last-child {
+  border-radius: 2.188rem;
+  font-weight: 700;
+  font-family: "Actay Wide", sans-serif;
+}
+.about__wrap a:hover {
+  background: linear-gradient(to bottom right, #F9A246, #F22532);
+}
+
+@media (max-width: 1024px) {
+  .about {
+    padding: 3rem 0 5rem;
+  }
+  .about__text {
+    gap: 2rem;
+  }
+  .about__text-container {
+    gap: 0.5rem;
+  }
+  .about__text-wrap p {
+    padding: 1.3rem 2rem 1rem 2rem;
+    font-size: 1rem;
+  }
+  .about__text-wrap h2 {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+  }
+  .about__wrap {
+    gap: 1.5rem;
+  }
+  .about__wrap a {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.5rem;
+  }
+  .about__wrap a:last-child {
+    font-size: 1.625rem;
+  }
+  .about-link {
+    width: 10rem;
+    height: 3.2rem;
+  }
+}
+@media (max-width: 490px) {
+  .about {
+    padding: 2rem 0;
+    background: url(/tourism/assets/img/tourism-background.png) no-repeat;
+    background-position: right;
+    background-size: cover;
+    width: 100%;
+    object-fit: cover;
+  }
+  .about__container {
+    gap: 3rem;
+  }
+  .about__text {
+    gap: 1.5rem;
+  }
+  .about__text-container {
+    gap: 0.8rem;
+  }
+  .about__text-container h2 {
+    font-size: 2rem;
+  }
+  .about__text-container h1 {
+    font-size: 2.2rem;
+  }
+  .about__text-wrap p {
+    padding: 1rem 1.5rem;
+    font-size: 0.95rem;
+  }
+  .about__text-wrap h2 {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+  .about__wrap {
+    gap: 1.3rem;
+  }
+  .about__wrap a {
+    padding: 0.5rem 1.3rem;
+    font-size: 1.25rem;
+  }
+  .about__wrap a:last-child {
+    font-size: 1.375rem;
+  }
+  .about-link {
+    width: 9.5rem;
+    height: 3rem;
+  }
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  gap: 3.563rem;
+}
+.header img {
+  max-width: 11.563rem;
+  height: auto;
+}
+.header__list {
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+}
+.header__item {
+  display: flex;
+  align-items: center;
+}
+.header__item-link {
+  padding: 0.5rem 0.844rem;
+  font-weight: 700;
+  font-family: "Actay Wide", sans-serif;
+  font-size: 1rem;
+  color: #FFFFFF;
+  border-radius: 2.188rem;
+  background: linear-gradient(to bottom right, #f22532, #f9a246);
+}
+
+@media (max-width: 490px) {
+  .header {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header img {
+    max-width: 8rem;
+    height: auto;
+  }
+  .header__list {
+    display: none;
+  }
+}
+.education {
+  padding: 4.688rem 0;
+  background: linear-gradient(to right, #F22532, #F9A246);
+}
+.education__text {
+  font-weight: 600;
+  font-size: 2.25rem;
+  text-align: center;
+}
+
+@media (max-width: 490px) {
+  .education {
+    padding: 3.5rem 0;
+  }
+  .education__text {
+    font-size: 1.5rem;
+  }
+}
+.prepares {
+  padding: 6.688rem 0;
+  position: relative;
+}
+.prepares::before {
+  content: "";
+  position: absolute;
+  background: url(/tourism/assets/img/tourism-student.png) no-repeat;
+  background-position: right center;
+  background-size: 34vw auto;
+  right: 0;
+  bottom: 15%;
+  width: min(57.5rem, 34vw);
+  height: min(15.063rem, 100%);
+  object-fit: cover;
+  border-top-left-radius: 1.375rem;
+  border-bottom-left-radius: 1.375rem;
+}
+.prepares__container {
+  max-width: 60%;
+}
+.prepares__container p {
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: left;
+  color: #191919;
+}
+
+@media (max-width: 490px) {
+  .prepares {
+    padding: 2rem 0;
+  }
+  .prepares::before {
+    background-position: center bottom;
+    background-size: 80vw auto;
+    width: 80%;
+    height: 10rem;
+    bottom: 0;
+    top: auto;
+    left: 50%;
+    border-radius: 1rem;
+    transform: translateX(-50%);
+  }
+  .prepares__container {
+    max-width: 100%;
+    margin-bottom: 9.5rem;
+  }
+  .prepares__container p {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+}
+.profiles {
+  padding: 2.625rem 0;
+  background: linear-gradient(to right, #F22532, #F9A246);
+}
+.profiles__text {
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (max-width: 490px) {
+  .profiles {
+    padding: 2rem 0;
+  }
+  .profiles__text {
+    font-size: 1.5rem;
+  }
+}
+.audience {
+  padding: 3.813rem 0 3.375rem 0;
+  background: url(/tourism/assets/img/audience-background.png) no-repeat;
+  background-size: contain;
+  background-position: bottom right;
+}
+.audience-wrap {
+  position: relative;
+}
+.audience-wrap::after {
+  content: "";
+  position: absolute;
+  background: url(/tourism/assets/icons/audience-black-arrow.svg) no-repeat;
+  background-size: contain;
+  background-position: top left;
+  width: 20.938rem;
+  height: 6.688rem;
+  top: 28%;
+  left: 7%;
+}
+.audience-wrap::before {
+  content: "";
+  position: absolute;
+  background: url(/assets/icons/audience-white-arrow.svg) no-repeat;
+  background-size: contain;
+  background-position: bottom right;
+  width: 27.938rem;
+  height: 11.688rem;
+  bottom: 12%;
+  right: 0%;
+}
+.audience__wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2.563rem;
+}
+.audience__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.188rem;
+}
+.audience__container > p {
+  padding: 1.875rem 0;
+  background: linear-gradient(to right, #f22532, #f9a246);
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 1.875rem;
+}
+.audience__text > h2 {
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+  color: #191919;
+  background: url(/assets/img/audience-text-background.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding: 3.5rem;
+}
+.audience__list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.audience__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4.375rem;
+  margin: 0 auto;
+}
+.audience__list-second {
+  display: flex;
+  flex-direction: row;
+  gap: 4.375rem;
+  margin: 0 6.813rem;
+}
+.audience__list-secondary {
+  display: flex;
+  flex-direction: row;
+  gap: 4.375rem;
+  margin: 0 13.375rem;
+  align-items: stretch;
+}
+.audience__item {
+  flex: 1;
+  display: flex;
+}
+.audience__item p {
+  flex: 1;
+  display: flex;
+  padding: 2.125rem 2.875rem;
+  background: linear-gradient(to right, #f22532, #f9a246);
+  text-align: center;
+  border-radius: 1.875rem;
+  font-weight: 700;
+  font-size: 1rem;
+  min-height: 7.813rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.audience__item-paragraph {
+  padding: 1.531rem 2.25rem;
+}
+.audience__item-40 {
+  flex: 0 0 35%;
+}
+.audience__item-60 {
+  flex: 1;
+}
+
+@media (max-width: 490px) {
+  .audience {
+    padding: 2rem 0;
+    background: url(/assets/img/audience-background.png) no-repeat right bottom, url(/assets/img/audience-background-mobile.png) no-repeat left top;
+  }
+  .audience-wrap {
+    position: relative;
+  }
+  .audience-wrap::after {
+    content: "";
+    position: absolute;
+    background: url(/assets/icons/audience-black-arrow.svg) no-repeat;
+    background-size: contain;
+    background-position: top left;
+    width: 8.938rem;
+    height: 7.688rem;
+    top: 38%;
+    left: 0;
+  }
+  .audience-wrap::before {
+    content: "";
+    position: absolute;
+    background: url(/tourism/assets/icons/audience-white-arrow.svg) no-repeat;
+    background-size: contain;
+    background-position: bottom right;
+    width: 10rem;
+    height: 5rem;
+    bottom: 10%;
+    right: 0%;
+  }
+  .audience__container {
+    gap: 1.5rem;
+  }
+  .audience__container > p {
+    padding: 1.2rem 0.5rem;
+    font-size: 1.25rem;
+    border-radius: 1.2rem;
+  }
+  .audience__text > h2 {
+    font-size: 1.25rem;
+    padding: 3.5rem 0.5rem;
+    background: url(/tourism/assets/img/audience-text-background-mobile.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .audience__list {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .audience__list-second, .audience__list-secondary {
+    flex-direction: column;
+    gap: 1.25rem;
+    margin: 0;
+  }
+  .audience__item p {
+    padding: 1.5rem;
+    font-size: 0.875rem;
+    min-height: 6rem;
+    border-radius: 1rem;
+  }
+  .audience__item-40 {
+    flex: 1;
+  }
+  .audience__item-60 {
+    flex: 1;
+  }
+}
+.advantages {
+  position: relative;
+  padding: 5rem 0;
+  background: linear-gradient(to right, #F22532, #F9A246);
+}
+.advantages-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 3.125rem;
+}
+.advantages__title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.625rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  width: 100%;
+}
+.advantages__item {
+  padding: 0.625rem 2.5rem;
+  background-color: #FFFFFF;
+  border-radius: 1.0625rem;
+}
+.advantages__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+.advantages__content.active {
+  max-height: 11.25rem;
+  opacity: 1;
+}
+.advantages__content-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6875rem;
+  padding-top: 0.875rem;
+  border-top: 1px solid #191919;
+}
+.advantages__content-item {
+  display: flex;
+  flex-direction: row;
+  gap: 0.6875rem;
+}
+.advantages__content-item img {
+  width: 1.6875rem;
+  height: 1.6875rem;
+}
+.advantages__content-item span {
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: #191919;
+}
+.advantages__block-toggle-img {
+  transition: transform 0.3s ease;
+}
+.advantages__block-toggle-img.rotate {
+  transform: rotate(180deg);
+}
+.advantages__item p.advantages__block-title {
+  color: #191919;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.8125rem;
+  margin: 0.625rem 0;
+}
+.advantages__block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.advantages__block-toggle {
+  border: none;
+  outline: none;
+  background-color: #FFFFFF;
+  padding: 0;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .advantages {
+    padding: 3.75rem 0;
+  }
+  .advantages__title {
+    font-size: 1.5rem;
+  }
+  .advantages__list {
+    margin-bottom: 1.25rem;
+  }
+  .advantages__item {
+    padding: 0.625rem 2.5rem;
+  }
+  .advantages__item p.advantages__block-title {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    padding: 0.313rem 0;
+    width: 85%;
+  }
+  .advantages__block-toggle-img {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+  .advantages__content-item {
+    gap: 0.75rem;
+  }
+  .advantages__content-item span {
+    font-size: 1rem;
+  }
+  .advantages__content-item img {
+    width: 1.688rem;
+    height: 1.688rem;
+  }
+}
+@media (max-width: 460px) {
+  .advantages {
+    padding: 2.188rem 0;
+  }
+  .advantages-wrap {
+    gap: 1.5rem;
+  }
+  .advantages__title {
+    text-align: center;
+    line-height: 1.1;
+  }
+  .advantages__list {
+    margin-bottom: 0.375rem;
+    gap: 0.625rem;
+  }
+  .advantages__content-list {
+    gap: 0.625rem;
+    padding-top: 0.625rem;
+  }
+  .advantages__item {
+    padding: 0.625rem 0.938rem;
+  }
+  .advantages__item p.advantages__block-title {
+    font-size: 0.875rem;
+    line-height: 1.063rem;
+    padding: 0.469rem 0;
+  }
+  .advantages__block-toggle-img {
+    width: 2rem;
+    height: 2rem;
+  }
+  .advantages__content-item {
+    gap: 0.75rem;
+  }
+  .advantages__content-item span {
+    font-size: 0.813rem;
+    line-height: 1rem;
+  }
+  .advantages__content-item img {
+    width: 1.688rem;
+    height: 1.688rem;
+  }
+}
+.skills {
+  padding: 4.313rem 0 5.313rem;
+  background: url(/tourism/assets/img/skills-background.png) no-repeat bottom/cover;
+}
+.skills__container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.75rem;
+}
+.skills__container > h2 {
+  font: 700 3rem "NEXT ART", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #191919;
+}
+.skills__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  gap: 1.313rem 3rem;
+}
+.skills__item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2.063rem 4rem 2.063rem 3.125rem;
+  background: linear-gradient(90deg, #F22532 0%, #F9A246 100%);
+  border-radius: 1.25rem;
+}
+.skills__item-paragraph {
+  font: 600 24px "Gilroy", sans-serif;
+  line-height: 1.3;
+}
+.skills__item-img {
+  width: 5.313rem;
+  height: 5.313rem;
+  flex-shrink: 0;
+}
+
+@media (max-width: 1024px) {
+  .skills__item-paragraph {
+    font: 600 1.25rem "Gilroy", sans-serif;
+  }
+}
+@media (max-width: 860px) {
+  .skills__list {
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+    gap: 1.313rem 2rem;
+  }
+  .skills__item {
+    gap: 1.2rem;
+    padding: 2.063rem 2rem 2.063rem 2rem;
+  }
+  .skills__item-img {
+    width: 4rem;
+    height: 4rem;
+  }
+  .skills__item-paragraph {
+    font: 600 1.1rem "Gilroy", sans-serif;
+  }
+}
+@media (max-width: 490px) {
+  .skills {
+    padding: 2.5rem 0;
+  }
+  .skills__container {
+    gap: 1.3rem;
+  }
+  .skills .skills__container > h2 {
+    font: 700 2rem "NEXT ART", sans-serif;
+  }
+}
+.agreement {
+  padding: 5rem 0 4rem 0;
+  background: linear-gradient(to right, #f9a246, #f22532);
+}
+.agreement__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.875rem;
+}
+.agreement__container-paragraph {
+  font-weight: 600;
+  font-size: 2.25rem;
+  text-align: center;
+}
+.agreement__container-link {
+  padding: 1rem 2.688rem;
+  font-weight: 600;
+  font-size: 2rem;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  border-radius: 2.563rem;
+  background-color: #FFFFFF;
+  color: #000000;
+  width: fit-content;
+  margin: 0 auto;
+  font-family: "TT Travels", sans-serif;
+  cursor: pointer;
+}
+
+@media (max-width: 490px) {
+  .agreement {
+    padding: 3rem 0;
+  }
+  .agreement__container {
+    gap: 2rem;
+  }
+  .agreement__container-paragraph {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+  }
+  .agreement__container-link {
+    font-size: 1.25rem;
+    padding: 0.75rem 2rem;
+    border-radius: 2rem;
+  }
+}
+.contacts {
+  position: relative;
+}
+.contacts::after {
+  content: "";
+  position: absolute;
+  background: url(/tourism/assets/img/shadov-line.png) no-repeat;
+  background-size: cover;
+  width: 35rem;
+  height: 40rem;
+  bottom: 0%;
+  left: 0%;
+}
+.contacts::before {
+  content: "";
+  position: absolute;
+  background: url(/tourism/assets/img/woman-hand-holding-airplane.png) no-repeat;
+  background-size: cover;
+  width: 45rem;
+  height: 45rem;
+  bottom: 0%;
+  right: 0%;
+}
+.contacts__text {
+  padding: 3.313rem 0;
+}
+.contacts__text > p {
+  font-weight: 600;
+  font-size: 2.25rem;
+  text-align: center;
+  color: #191919;
+}
+.contacts__text-span {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #191919;
+}
+.contacts__link {
+  padding: 2.125rem 0 3.438rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3.188rem;
+  margin: 0 auto;
+  align-items: center;
+}
+.contacts__link-title {
+  font-family: "NEXT ART", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+}
+.contacts__link-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.contacts__link-item {
+  display: flex;
+  flex-direction: row;
+  gap: 0.938rem;
+  justify-content: center;
+  z-index: 1;
+}
+.contacts__link-item h3,
+.contacts__link-item a {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #000000;
+  text-decoration: none;
+}
+.contacts__footer {
+  padding: 3.813rem 0 2.875rem 0;
+}
+.contacts__footer p {
+  font-weight: 300;
+  font-size: 1.25rem;
+  color: #000000;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .contacts {
+    position: relative;
+  }
+  .contacts::after {
+    content: "";
+    position: absolute;
+    background: url(/tourism/assets/img/shadov-line.png) no-repeat;
+    background-size: cover;
+    width: 28rem;
+    height: 32rem;
+    bottom: 0%;
+    left: 0%;
+  }
+  .contacts::before {
+    content: "";
+    position: absolute;
+    background: url(/tourism/assets/img/woman-hand-holding-airplane.png) no-repeat;
+    background-size: cover;
+    width: 32rem;
+    height: 32rem;
+    bottom: 0%;
+    right: 0%;
+  }
+}
+@media (max-width: 490px) {
+  .contacts {
+    z-index: 0;
+  }
+  .contacts::after {
+    width: 16rem;
+    height: 18rem;
+    top: 10%;
+    z-index: -1;
+  }
+  .contacts::before {
+    width: 20rem;
+    height: 20rem;
+    bottom: 7%;
+    z-index: -1;
+  }
+  .contacts__text {
+    padding: 2rem 1rem;
+    z-index: 2;
+  }
+  .contacts__text > p {
+    font-size: 1.5rem;
+    z-index: 10;
+  }
+  .contacts__text-span {
+    font-size: 1.5rem;
+    z-index: 1;
+  }
+  .contacts__link {
+    padding: 1rem 0;
+    gap: 1.4rem;
+  }
+  .contacts__link-title {
+    font-size: 2rem;
+  }
+  .contacts__link-item {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .contacts__link-item h3,
+  .contacts__link-item a {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+  .contacts__footer {
+    padding: 2rem 1rem;
+  }
+  .contacts__footer p {
+    font-size: 1rem;
+  }
+}
+.burger__btn {
+  display: none;
+  position: relative;
+  z-index: 1000;
+  width: 2rem;
+  height: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.burger__btn::before, .burger__btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 0.125rem;
+  width: 100%;
+  background-color: #FFFFFF;
+  transition: 0.3s ease;
+  z-index: 1000;
+}
+.burger__btn::before {
+  top: 0;
+}
+.burger__btn::after {
+  bottom: 0;
+}
+.burger__btn-span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 0.125rem;
+  background-color: #FFFFFF;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+.burger__btn.burger-btn__open {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  background-image: url(/tourism/assets/icons/burger-close-btn.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 2.25rem;
+  height: 2.25rem;
+}
+.burger__btn.burger-btn__open::before, .burger__btn.burger-btn__open::after,
+.burger__btn.burger-btn__open span {
+  display: none;
+}
+
+.burger__nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.813rem;
+}
+
+.burger {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.burger__open {
+  opacity: 1;
+  visibility: visible;
+}
+.burger__open .burger__content {
+  transform: translateX(0);
+}
+.burger__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  margin: 0 auto;
+  width: 100%;
+  height: 17.688rem;
+  padding: 4.625rem 3.625rem 2rem 3.625rem;
+  background: linear-gradient(to right, #F22532, #F9A246);
+  transform: translateX(100%);
+  transition: transform 0.3s linear;
+}
+
+@media (max-width: 490px) {
+  .burger__btn {
+    display: block;
+  }
+  .header__link {
+    display: none;
+  }
+  .burger__nav-item a {
+    font-size: 1.5rem;
+    color: #FFFFFF;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
