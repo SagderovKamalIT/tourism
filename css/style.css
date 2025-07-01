@@ -236,7 +236,7 @@ section {
 
 .about {
   padding: 4.063rem 0 7.188rem 0;
-  background: url(/assets/img/tourism-background.png) no-repeat;
+  background: url(./assets/img/tourism-background.png) no-repeat;
   background-position: right;
   background-size: contain;
   width: 100%;
@@ -343,7 +343,7 @@ section {
 .prepares::before {
   content: "";
   position: absolute;
-  background: url(/assets/img/tourism-student.png) no-repeat;
+  background: url(./assets/img/tourism-student.png) no-repeat;
   background-position: right center;
   background-size: 34vw auto;
   right: 0;
@@ -377,7 +377,7 @@ section {
 
 .audience {
   padding: 3.813rem 0 3.375rem 0;
-  background: url(/assets/img/audience-background.png) no-repeat;
+  background: url(./assets/img/audience-background.png) no-repeat;
   background-size: contain;
   background-position: bottom right;
 }
@@ -387,7 +387,7 @@ section {
 .audience-wrap::after {
   content: "";
   position: absolute;
-  background: url(/assets/icons/audience-black-arrow.svg) no-repeat;
+  background: url(./assets/icons/audience-black-arrow.svg) no-repeat;
   background-size: contain;
   background-position: top left;
   width: 20.938rem;
@@ -398,7 +398,7 @@ section {
 .audience-wrap::before {
   content: "";
   position: absolute;
-  background: url(/assets/icons/audience-white-arrow.svg) no-repeat;
+  background: url(./assets/icons/audience-white-arrow.svg) no-repeat;
   background-size: contain;
   background-position: bottom right;
   width: 27.938rem;
@@ -429,7 +429,7 @@ section {
   font-size: 32px;
   text-align: center;
   color: #191919;
-  background: url(/assets/img/audience-text-background.png) no-repeat;
+  background: url(./assets/img/audience-text-background.png) no-repeat;
   background-size: contain;
   background-position: center;
   padding: 3.5rem;
