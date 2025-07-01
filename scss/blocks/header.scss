@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  gap: 3.563rem;
+
+   img {
+     max-width: 11.563rem;
+     height: auto;
+   }
+
+   &__list {
+      display: flex;
+      flex-direction: row;
+       gap: 0.75rem;
+     
+    
+   }
+
+   &__item {
+      display: flex;
+      align-items: center;
+      
+
+      &-link {
+         padding: 0.5rem 0.844rem;
+         font-weight: 700;
+         font-family: "Actay Wide", sans-serif;
+font-size: 16px;
+color: $white;
+border-radius: 2.188rem;
+background: linear-gradient(to bottom right, #F22532, #F9A246);;
+
+      }
+   }
+
+}

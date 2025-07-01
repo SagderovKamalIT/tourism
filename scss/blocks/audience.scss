@@ -1,0 +1,141 @@
+.audience {
+  padding: 3.813rem 0 3.375rem 0;
+     background: url(/assets/img/audience-background.png) no-repeat;
+    background-size: contain;
+    background-position: bottom right;
+
+    &-wrap {
+      position: relative;
+     &::after {
+      content: '';
+      position: absolute;
+      background: url(/assets/icons/audience-black-arrow.svg) no-repeat;
+      background-size: contain;
+      background-position: top left;
+       width: 20.938rem;
+    height: 6.688rem;
+      top: 28%;
+      left: 7%;
+    }
+
+       &::before {
+      content: '';
+      position: absolute;
+      background: url(/assets/icons/audience-white-arrow.svg) no-repeat;
+      background-size: contain;
+      background-position: bottom right;
+          width: 27.938rem;
+    height: 11.688rem;
+    bottom: 12%;
+    right: 0%;
+    }
+    }
+
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 2.563rem;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.188rem;
+
+    > p {
+      padding: 1.875rem 0;
+      background: linear-gradient(to right, #f22532, #f9a246);
+      font-weight: 700;
+      font-size: 2rem;
+      text-align: center;
+      border-radius: 1.875rem;
+    }
+
+     
+  }
+
+
+
+  &__text {
+
+
+    > h2 {
+font-weight: 600;
+font-size: 32px;
+text-align: center;
+color: $dark-jungle-green;
+ background: url(/assets/img/audience-text-background.png) no-repeat;
+  background-size: contain;
+   background-position: center;
+  padding: 3.5rem;
+
+    }
+  }
+
+  &__list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4.375rem;
+    margin: 0 auto;
+  }
+
+  &__list-second {
+     display: flex;
+    flex-direction: row;
+    gap: 4.375rem;
+    margin: 0 6.813rem;
+  }
+
+  &__list-secondary {
+    display: flex;
+    flex-direction: row;
+    gap: 4.375rem;
+    margin: 0 13.375rem;
+    align-items: stretch;
+  }
+
+  &__item {
+    flex: 1;
+    display: flex;
+
+  
+
+    p {
+      flex: 1;
+       display: flex;
+      padding: 2.125rem 2.875rem;
+      background: linear-gradient(to right, #f22532, #f9a246);
+      text-align: center;
+      border-radius: 1.875rem;
+      font-weight: 700;
+      font-size: 1rem;
+      min-height: 7.813rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-paragraph {
+      padding: 1.531rem 2.25rem;
+    }
+  }
+
+    &__item-40 {
+
+      flex: 0 0 35%;
+
+    }
+
+    &__item-60 {
+
+      flex: 1;
+
+    }
+}
