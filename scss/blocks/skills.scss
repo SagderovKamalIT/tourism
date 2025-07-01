@@ -1,0 +1,100 @@
+.skills {
+  padding: 4.313rem 0 5.313rem;
+  // background: url("/assets/img/skills-background.png") no-repeat bottom / cover;
+  background: url(#{$base-url}/assets/img/skills-background.png) no-repeat bottom / cover;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 3.75rem;
+
+    > h2 {
+      font: 700 3rem "NEXT ART", sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+      color: $dark-jungle-green;
+    }
+  }
+
+  &__list {
+    display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    gap: 1.313rem 3rem;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2.063rem 4rem 2.063rem 3.125rem;
+    background: linear-gradient(90deg, $carmine-pink 0%, $neon-carrot 100%);
+    border-radius: 1.25rem;
+
+    &-paragraph {
+      font: 600 24px "Gilroy", sans-serif;
+      line-height: 1.3;
+    }
+
+    &-img {
+      width: 5.313rem;
+      height: 5.313rem;
+      flex-shrink: 0;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .skills {
+
+    &__item {
+      &-paragraph {
+        font: 600 1.25rem "Gilroy", sans-serif;
+
+      }
+    }
+
+  }
+
+}
+
+@media (max-width: 860px) {
+  
+  .skills {
+
+    &__list {
+      grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+      gap: 1.313rem 2rem;
+    }
+
+    &__item {
+
+      &-img {
+        width: 4rem;
+        height: 4rem;
+      }
+      gap: 1.2rem;
+      padding: 2.063rem 2rem 2.063rem 2rem;
+      &-paragraph {
+        font: 600 1.1rem "Gilroy", sans-serif;
+
+      }
+    }
+
+  }
+}
+
+@media (max-width: 490px) {
+  .skills {
+    padding: 2.5rem 0;
+
+    &__container {
+      gap: 1.3rem;
+    }
+
+    .skills__container > h2 {
+    font: 700 2rem "NEXT ART", sans-serif;
+    
+  }
+}
+}

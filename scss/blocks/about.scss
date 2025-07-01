@@ -1,6 +1,6 @@
 .about {
   padding: 4.063rem 0 7.188rem 0;
-  // background: url(./assets/img/tourism-background.png) no-repeat;
+  //  background: url(/assets/img/tourism-background.png) no-repeat;
   background: url(#{$base-url}/assets/img/tourism-background.png) no-repeat;
   background-position: right;
   background-size: contain;
@@ -76,11 +76,126 @@
          font-weight: 700;
          font-family: "Actay Wide", sans-serif;
       }
+
+      &:hover {
+        background: linear-gradient(to bottom right, #F9A246, #F22532);
+
+      }
       
     }
 
 
   }
 
+
+}
+
+@media (max-width: 1024px) {
+  .about {
+    padding: 3rem 0 5rem;
+
+    &__text {
+      gap: 2rem;
+
+      &-container {
+        gap: 0.5rem;
+
+      }
+
+      &-wrap {
+        p {
+          padding: 1.3rem 2rem 1rem 2rem;
+          font-size: 1rem;
+        }
+
+        h2 {
+          padding: 0.5rem 1rem;
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    &__wrap {
+      gap: 1.5rem;
+
+      a {
+        padding: 0.5rem 1.5rem;
+        font-size:  1.5rem;
+
+        &:last-child {
+          font-size: 1.625rem;
+        }
+
+      }
+    }
+
+    &-link {
+      width: 10rem;
+      height: 3.2rem;
+    }
+  }
+}
+
+@media (max-width: 490px) {
+
+  .about {
+    padding: 2rem 0;
+  // background: url(/assets/img/tourism-background.png) no-repeat;
+  background: url(#{$base-url}/assets/img/tourism-background.png) no-repeat;
+  background-position: right;
+  background-size: cover;
+  width: 100%;
+  object-fit: cover;
+
+   &__container {
+      gap: 3rem;
+    }
+
+    &__text {
+      gap: 1.5rem;
+
+      &-container {
+        gap: 0.8rem;
+
+        h2 {
+          font-size: 2rem;
+        }
+
+        h1 {
+          font-size: 2.2rem;
+        }
+      }
+
+      &-wrap {
+        p {
+          padding: 1rem 1.5rem;
+          font-size: 0.95rem;
+        }
+
+        h2 {
+          padding: 0.5rem 1rem;
+          font-size: 1rem;
+        }
+      }
+    }
+
+    &__wrap {
+      gap: 1.3rem;
+
+      a {
+        padding: 0.5rem 1.3rem;
+        font-size: 1.25rem;
+
+        &:last-child {
+          font-size: 1.375rem;
+        }
+      }
+    }
+
+    &-link {
+      width: 9.5rem;
+      height: 3rem;
+    }
+  }
 
 }

@@ -4,8 +4,18 @@
 
   &__text {
 font-weight: 700;
-font-size: 36px;
+font-size: 2.5rem;
 text-align: center;
 text-transform: uppercase;
+  }
+}
+
+@media (max-width: 490px) {
+  .profiles {
+    padding: 2rem 0;
+
+    &__text {
+      font-size: 1.5rem;
+    }
   }
 }

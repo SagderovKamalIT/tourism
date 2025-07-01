@@ -63,3 +63,74 @@ section {
   align-items: center;
   justify-content: flex-start; 
 }
+
+@media (max-width: 1200px)  {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  
+.wrap {
+  padding: 0 5.5rem;
+  box-sizing: border-box;
+}
+
+.audience-wrap {
+  padding: 0 5.5rem;
+  box-sizing: border-box;
+}
+
+}
+
+@media (max-width: 860px) {
+  html {
+    font-size: 70%;
+  }
+
+  .wrap {
+  padding: 0 4rem;
+  box-sizing: border-box;
+}
+
+.audience-wrap {
+  padding: 0 4rem;
+  box-sizing: border-box;
+}
+}
+
+@media (max-width: 670px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 580px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media (max-width: 490px) {
+  html {
+    font-size: 90%;
+  }
+
+    .wrap {
+  padding: 0 1.8rem;
+  box-sizing: border-box;
+}
+
+.audience-wrap {
+  padding: 0 1.8rem;
+  box-sizing: border-box;
+}
+}
+
+@media (max-width: 380px) {
+  html {
+    font-size: 80%;
+  }
+}

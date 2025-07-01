@@ -1,7 +1,7 @@
 .audience {
   padding: 3.813rem 0 3.375rem 0;
-    //  background: url(./assets/img/audience-background.png) no-repeat;
-     background: url(#{$base-url}/assets/img/audience-background.png) no-repeat;
+    //  background: url(/assets/img/audience-background.png) no-repeat;
+    background: url(#{$base-url}/assets/img/audience-background.png) no-repeat;
     background-size: contain;
     background-position: bottom right;
 
@@ -10,7 +10,7 @@
      &::after {
       content: '';
       position: absolute;
-      // background: url(./assets/icons/audience-black-arrow.svg) no-repeat;
+      // background: url(/assets/icons/audience-black-arrow.svg) no-repeat;
       background: url(#{$base-url}/assets/icons/audience-black-arrow.svg) no-repeat;
       background-size: contain;
       background-position: top left;
@@ -23,8 +23,8 @@
        &::before {
       content: '';
       position: absolute;
-      // background: url(./assets/icons/audience-white-arrow.svg) no-repeat;
-      background: url(#{$base-url}/assets/icons/audience-white-arrow.svg) no-repeat;
+      background: url(/assets/icons/audience-white-arrow.svg) no-repeat;
+      // background: url(#{$base-url}/assets/icons/audience-white-arrow.svg) no-repeat;
       background-size: contain;
       background-position: bottom right;
           width: 27.938rem;
@@ -65,11 +65,11 @@
 
     > h2 {
 font-weight: 600;
-font-size: 32px;
+font-size: 2rem;
 text-align: center;
 color: $dark-jungle-green;
-//  background: url(./assets/img/audience-text-background.png) no-repeat;
- background: url(#{$base-url}/assets/img/audience-text-background.png) no-repeat;
+background: url(/assets/img/audience-text-background.png) no-repeat;
+//  background: url(#{$base-url}/assets/img/audience-text-background.png) no-repeat;
   background-size: contain;
    background-position: center;
   padding: 3.5rem;
@@ -142,4 +142,94 @@ color: $dark-jungle-green;
       flex: 1;
 
     }
+}
+
+@media (max-width: 490px) {
+  .audience {
+    padding: 2rem 0;
+     background:  url(/assets/img/audience-background.png) no-repeat right bottom,
+    url(/assets/img/audience-background-mobile.png) no-repeat left top;
+    //  background: url(#{$base-url}/assets/img/audience-background.png) no-repeat;
+   
+
+
+
+    &-wrap {
+      position: relative;
+     &::after {
+      content: '';
+      position: absolute;
+      background: url(/assets/icons/audience-black-arrow.svg) no-repeat;
+      // background: url(#{$base-url}/assets/icons/audience-black-arrow.svg) no-repeat;
+      background-size: contain;
+      background-position: top left;
+             width: 8.938rem;
+        height: 7.688rem;
+        top: 38%;
+      left: 0;
+    }
+
+       &::before {
+      content: '';
+      position: absolute;
+      // background: url(/assets/icons/audience-white-arrow.svg) no-repeat;
+       background: url(#{$base-url}/assets/icons/audience-white-arrow.svg) no-repeat;
+      background-size: contain;
+      background-position: bottom right;
+          width: 10rem;
+    height: 5rem;
+    bottom: 10%;
+    right: 0%;
+    }
+    }
+
+    &__container {
+      gap: 1.5rem;
+
+      > p {
+        padding: 1.2rem 0.5rem;
+        font-size: 1.25rem;
+        border-radius: 1.2rem;
+      }
+    }
+
+    &__text > h2 {
+      font-size: 1.25rem;
+      padding: 3.5rem 0.5rem;
+      // background: url(/assets/img/audience-text-background-mobile.png) no-repeat;
+       background: url(#{$base-url}/assets/img/audience-text-background-mobile.png) no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+
+  
+
+    &__list {
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+    }
+
+    &__list-second,
+    &__list-secondary {
+      flex-direction: column;
+      gap: 1.25rem;
+      margin: 0;
+    }
+
+    &__item p {
+      padding: 1.5rem;
+      font-size: 0.875rem;
+      min-height: 6rem;
+      border-radius: 1rem;
+    }
+
+    &__item-40 {
+      flex: 1;
+    }
+
+    &__item-60 {
+      flex: 1;
+    }
+
+  }
 }

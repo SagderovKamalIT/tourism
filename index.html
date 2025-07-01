@@ -28,21 +28,46 @@
 
             <ul class="header__list">
               <li class="header__item">
-                <a class="header__item-link" href="">О программе</a>
+                <a class="header__item-link" href="#programm">О программе</a>
               </li>
 
               <li class="header__item">
-                <a class="header__item-link" href="">Профиль</a>
+                <a class="header__item-link" href="#profile">Профиль</a>
               </li>
 
               <li class="header__item">
-                <a class="header__item-link" href="">Как поступить</a>
+                <a class="header__item-link" href="#admission">Как поступить</a>
               </li>
 
               <li class="header__item">
-                <a class="header__item-link" href="">Контакты</a>
+                <a class="header__item-link" href="#contacts">Контакты</a>
               </li>
             </ul>
+
+             <button class="burger__btn js-burger__btn">
+            <span class="burger__btn-span"></span>
+          </button>
+
+
+          
+         <div class="burger js-burger">
+        <div class="burger__content js-burger__content">
+          <nav class="burger__nav">
+            <ul class="burger__nav-list">
+              <li class="burger__nav-item"><a href="#programm">О программе</a></li>
+              <li class="burger__nav-item">
+                <a href="#profile">Профиль</a>
+              </li>
+
+              <li class="burger__nav-item">
+                <a href="#admission">Как поступить</a>
+              </li>
+              <li class="burger__nav-item"><a href="#contacts">Контакты</a></li>
+              <li class="burger__nav-item"><a href="https://forms.yandex.ru/cloud/686450cef47e73319c9c9200" target="_blank" rel="noopener noreferrer">Оставить заявку</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
           </header>
 
           <div class="about__text">
@@ -63,11 +88,11 @@
           </div>
 
           <div class="about__wrap">
-            <a href="">
+            <a href="https://grants.rudn.ru/" target="_blank" rel="noopener noreferrer">
               Есть бюджетные места
             </a>
 
-            <a href="">
+            <a href="https://forms.yandex.ru/cloud/686450cef47e73319c9c9200"target="_blank" rel="noopener noreferrer" >
               Оставить заявку
             </a>
           </div>
@@ -75,9 +100,12 @@
 
       </div>
 
+
     </section>
 
-    <section class="education">
+
+
+    <section class="education" id="programm">
 
       <div class="wrap">
         <p class="education__text">
@@ -92,7 +120,10 @@
 
     </section>
 
-    <section class="prepares">
+    
+    
+
+    <section class="prepares" >
 
       <div class="wrap">
 
@@ -119,7 +150,7 @@
 
     </section>
 
-    <section class="audience">
+    <section class="audience" id="profile">
 
       <div class="wrap audience-wrap">
 
@@ -261,131 +292,235 @@
 
     </section>
 
-    <section class="advantages" >
+    <section class="advantages">
 
       <div class="wrap advantages-wrap">
-        
 
-      <p class="advantages__title">Преимущества магистратуры по туризму </p>
+
+        <p class="advantages__title">Преимущества магистратуры по туризму </p>
 
         <ul class="advantages__list">
           <li class="advantages__item">
             <div class="advantages__block">
               <p class="advantages__block-title">
-               Современные подходы к обучению
+                Современные подходы к обучению
               </p>
 
               <button class="advantages__block-toggle js-advantages__block-toggle">
-                <img class="advantages__block-toggle-img js-advantages__block-toggle-img" src="./assets/icons/double-down.svg" alt="Двойные стрелки вниз" />
+                <img class="advantages__block-toggle-img js-advantages__block-toggle-img"
+                  src="./assets/icons/double-down.svg" alt="Двойные стрелки вниз" />
               </button>
             </div>
-        
+
             <div class="advantages__content js-advantages__content">
               <ul class="advantages__content-list">
 
                 <li class="advantages__content-item">
-                  <img  src="./assets/icons/star-icon.svg" alt="иконка звезды">
+                  <img src="./assets/icons/star-icon.svg" alt="иконка звезды">
                   <span>Практическая работа с реальными кейсами, проектными заданиями, стажировки.</span>
-                  </li>
+                </li>
                 <li class="advantages__content-item">
                   <img src="./assets/icons/star-icon.svg" alt="иконка звезды">
                   <span>Использование цифровых технологий и аналитики для управления.</span>
-                 </li>
+                </li>
               </ul>
             </div>
-           
+
           </li>
 
 
-           <li class="advantages__item">
+          <li class="advantages__item">
             <div class="advantages__block">
               <p class="advantages__block-title">
-               Международные перспективы
+                Международные перспективы
               </p>
 
               <button class="advantages__block-toggle js-advantages__block-toggle">
-                <img class="advantages__block-toggle-img js-advantages__block-toggle-img" src="./assets/icons/double-down.svg" alt="Двойные стрелки вниз" />
+                <img class="advantages__block-toggle-img js-advantages__block-toggle-img"
+                  src="./assets/icons/double-down.svg" alt="Двойные стрелки вниз" />
               </button>
             </div>
-        
+
             <div class="advantages__content js-advantages__content">
               <ul class="advantages__content-list">
 
                 <li class="advantages__content-item">
-                  <img  src="./assets/icons/star-icon.svg" alt="иконка звезды">
+                  <img src="./assets/icons/star-icon.svg" alt="иконка звезды">
                   <span>Участие в программах обмена и международных конференциях.</span>
-                  </li>
+                </li>
                 <li class="advantages__content-item">
                   <img src="./assets/icons/star-icon.svg" alt="иконка звезды">
                   <span>Возможность изучать мировой опыт в сфере туризма.</span>
-                 </li>
+                </li>
               </ul>
             </div>
-           
+
           </li>
 
 
-          
-           <li class="advantages__item">
+
+          <li class="advantages__item">
             <div class="advantages__block">
               <p class="advantages__block-title">
-              Связь с практикой
+                Связь с практикой
               </p>
 
               <button class="advantages__block-toggle js-advantages__block-toggle">
-                <img class="advantages__block-toggle-img js-advantages__block-toggle-img" src="./assets/icons/double-down.svg" alt="Двойные стрелки вниз" />
+                <img class="advantages__block-toggle-img js-advantages__block-toggle-img"
+                  src="./assets/icons/double-down.svg" alt="Двойные стрелки вниз" />
               </button>
             </div>
-        
+
             <div class="advantages__content js-advantages__content">
               <ul class="advantages__content-list">
 
                 <li class="advantages__content-item">
-                  <img  src="./assets/icons/star-icon.svg" alt="иконка звезды">
-                  <span>Программа реализуется в сотрудничестве с ведущими туристическими компаниями, корпорациями развития, туристическими гигантами, Министерствами туризма субъектов РФ и зарубежных стран.</span>
-                  </li>
+                  <img src="./assets/icons/star-icon.svg" alt="иконка звезды">
+                  <span>Программа реализуется в сотрудничестве с ведущими туристическими компаниями, корпорациями
+                    развития, туристическими гигантами, Министерствами туризма субъектов РФ и зарубежных стран.</span>
+                </li>
                 <li class="advantages__content-item">
                   <img src="./assets/icons/star-icon.svg" alt="иконка звезды">
                   <span>Преподаватели – практики с большим опытом в индустрии.</span>
-                 </li>
+                </li>
               </ul>
             </div>
-           
+
           </li>
 
-            <li class="advantages__item">
+          <li class="advantages__item">
             <div class="advantages__block">
               <p class="advantages__block-title">
-             Индивидуальная траектория обучения
+                Индивидуальная траектория обучения
               </p>
 
               <button class="advantages__block-toggle js-advantages__block-toggle">
-                <img class="advantages__block-toggle-img js-advantages__block-toggle-img" src="./assets/icons/double-down.svg" alt="Двойные стрелки вниз" />
+                <img class="advantages__block-toggle-img js-advantages__block-toggle-img"
+                  src="./assets/icons/double-down.svg" alt="Двойные стрелки вниз" />
               </button>
             </div>
-        
+
             <div class="advantages__content js-advantages__content">
               <ul class="advantages__content-list">
 
                 <li class="advantages__content-item">
-                  <img  src="./assets/icons/star-icon.svg" alt="иконка звезды">
+                  <img src="./assets/icons/star-icon.svg" alt="иконка звезды">
                   <span>Возможность выбирать курсы и проекты в зависимости от ваших карьерных целей.</span>
-                  </li>
+                </li>
               </ul>
             </div>
-           
+
           </li>
 
-          
 
 
-         
 
 
-         
-            </ul>
-          </div>
+
+
+
         </ul>
+      </div>
+      </ul>
+      </div>
+
+    </section>
+
+    <section class="skills">
+
+      <div class="wrap">
+        <div class="skills__container">
+          <h2>
+            Чему вы научитесь?
+          </h2>
+
+          <ul class="skills__list">
+            <li class="skills__item">
+
+              <p class="skills__item-paragraph">
+                Управлять проектами
+                в сфере туризма
+                и гостеприимства
+              </p>
+
+              <img class="skills__item-img" src="./assets/icons/skills-heart.svg" alt="Иконка сердца">
+
+            </li>
+
+            <li class="skills__item">
+
+              <p class="skills__item-paragraph">
+                Анализировать глобальные тренды
+                и внедрять инновации
+              </p>
+
+              <img class="skills__item-img" src="./assets/icons/skills-analysic.svg" alt="Иконка сердца">
+
+            </li>
+
+            <li class="skills__item">
+
+              <p class="skills__item-paragraph">
+                Создавать конкурентоспособные туристические продукты
+              </p>
+
+              <img class="skills__item-img" src="./assets/icons/skills-baggage.svg" alt="Иконка сердца">
+
+            </li>
+
+            <li class="skills__item">
+
+              <p class="skills__item-paragraph">
+                Анализировать глобальные тренды
+                и внедрять инновации
+              </p>
+
+              <img class="skills__item-img" src="./assets/icons/skills-global-trends.svg" alt="Иконка сердца">
+
+            </li>
+
+
+            <li class="skills__item">
+
+              <p class="skills__item-paragraph">
+                Разрабатывать устойчивые и экологичные решения для туризма
+              </p>
+
+              <img class="skills__item-img" src="./assets/icons/skills-ecology.svg" alt="Иконка сердца">
+
+            </li>
+
+            <li class="skills__item">
+
+              <p class="skills__item-paragraph">
+                Работать с цифровыми инструментами
+                для анализа рынка
+                и управления
+              </p>
+
+              <img class="skills__item-img" src="./assets/icons/skills-brain.svg" alt="Иконка сердца">
+
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="agreement" id="admission">
+
+      <div class="wrap">
+        <div class="agreement__container">
+          <p class="agreement__container-paragraph">
+            Заключи образовательный кредит всего под 3% годовых
+            и учись в РУДН по очень выгодным условиям
+          </p>
+
+
+          <a class="agreement__container-link" href="https://admission.rudn.ru/events/obrazovatelnyy-kredit/"  target="_blank" rel="noopener noreferrer">
+            узнать подробности
+          </a>
+        </div>
       </div>
 
     </section>
@@ -393,12 +528,93 @@
 
 
   </main>
+
+
+  <footer>
+    <section class="contacts" >
+
+      <div class="wrap">
+
+        <div class="contacts__text">
+
+          <p>
+             Откройте для себя мир возможностей в туризме!
+            <span class="contacts__text-span" > <br>
+                 Начните карьеру в одной из самых перспективных
+и вдохновляющих отраслей
+
+            </span>
+          </p>
+
+        </div>
+
+        <div class="contacts__link"  id="contacts">
+
+          <h2 class="contacts__link-title" >
+             Контакты:
+          </h2>
+
+          <ul class="contacts__link-list">
+
+            <li class="contacts__link-item" >
+
+              <h3>
+                   Телефон:
+              </h3>
+
+              <a href="tel:+7 (999)8804567 "
+             target="_blank" rel="noopener noreferrer">
+                +7 (999) 880-45-67 
+              </a>
+
+            </li>
+
+            <li class="contacts__link-item" >
+              <h3>
+                Эл. почта:
+              </h3>
+
+              <a  href="mailto:hsm@pfur.ru"
+             target="_blank" rel="noopener noreferrer">
+                  hsm@pfur.ru 
+
+              </a>
+            </li>
+
+            <li class="contacts__link-item" >
+              <h3>
+                Адрес:
+              </h3>
+
+              <a   href="https://yandex.ru/maps/213/moscow/house/ulitsa_miklukho_maklaya_6/Z04Ycg5pSkIFQFtvfXp0c3xiYA==/?ll=37.499372%2C55.652014&amp;z=16"
+             target="_blank" rel="noopener noreferrer">
+                г. Москва, ул. Миклухо-Маклая д.6 
+              </a>
+            </li>
+            
+          </ul>
+
+
+
+        </div>
+
+        <div class="contacts__footer">
+          <p>
+        © RUDN UNIVERSITY
+          </p>
+        </div>
+        
+      </div>
+
+    </section>
+  </footer>
 </body>
 
 
 
 
 <script src="./js/open.js"></script>
+<script src="./js/burger.js"></script>
 </body>
 
 </html>

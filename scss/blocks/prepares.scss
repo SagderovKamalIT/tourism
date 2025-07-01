@@ -5,8 +5,8 @@
   &::before {
     content: "";
   position: absolute;
-  // background: url(./assets/img/tourism-student.png) no-repeat;
-   background: url(#{$base-url}/assets/img/tourism-student.png) no-repeat;
+  // background: url(/assets/img/tourism-student.png) no-repeat;
+  background: url(#{$base-url}/assets/img/tourism-student.png) no-repeat;
   background-position: right center;
   background-size: 34vw auto;
   right: 0;
@@ -26,6 +26,34 @@
       font-size: 2rem;
       text-align: left;
       color: $dark-jungle-green;
+    }
+  }
+}
+
+@media (max-width: 490px) {
+  .prepares {
+    padding: 2rem 0;
+
+    &::before {
+      background-position: center bottom;
+      background-size: 80vw auto;
+      width: 80%;
+      height: 10rem;
+      bottom: 0;
+      top: auto;
+       left: 50%;
+      border-radius: 1rem;
+      transform: translateX(-50%);
+    }
+
+    &__container {
+      max-width: 100%;
+      margin-bottom: 9.5rem;
+
+      p {
+        font-size: 1.25rem;
+        text-align: center;
+      }
     }
   }
 }
