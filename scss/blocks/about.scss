@@ -1,6 +1,5 @@
 .about {
   padding: 4.063rem 0 7.188rem 0;
-  //  background: url(/assets/img/tourism-background.png) no-repeat;
   background: url(#{$base-url}/assets/img/tourism-background.png) no-repeat;
   background-position: right;
   background-size: contain;
@@ -70,6 +69,7 @@
       text-align: center;
       font-weight: 500;
       font-size: 32px;
+      transition: all 0.3s ease-in-out;
 
       &:last-child {
          border-radius: 2.188rem;
@@ -79,6 +79,8 @@
 
       &:hover {
         background: linear-gradient(to bottom right, #F9A246, #F22532);
+  transform: scale(1.05);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 
       }
       
@@ -140,7 +142,6 @@
 
   .about {
     padding: 2rem 0;
-  // background: url(/assets/img/tourism-background.png) no-repeat;
   background: url(#{$base-url}/assets/img/tourism-background.png) no-repeat;
   background-position: right;
   background-size: cover;
@@ -188,6 +189,12 @@
 
         &:last-child {
           font-size: 1.375rem;
+        }
+
+        &:hover {
+           background: linear-gradient(to bottom right, #F22532, #F9A246);
+    box-shadow: none !important;
+    transform: none !important;
         }
       }
     }

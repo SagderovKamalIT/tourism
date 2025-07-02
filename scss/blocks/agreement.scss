@@ -26,6 +26,15 @@
       margin: 0 auto;
       font-family: "TT Travels", sans-serif;
       cursor: pointer;
+
+      &:hover {
+         background-color: darken($white, 5%);
+  color: #f22532;
+  transform: scale(1.05);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+
+      }
     }
   }
 }

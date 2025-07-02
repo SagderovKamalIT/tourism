@@ -4,7 +4,6 @@
   &::after {
     content: "";
     position: absolute;
-    // background: url(/assets/img/shadov-line.png) no-repeat;
      background: url(#{$base-url}/assets/img/shadov-line.png) no-repeat;
     background-size: cover;
     width: 35rem;
@@ -16,7 +15,6 @@
   &::before {
     content: "";
     position: absolute;
-    // background: url(/assets/img/woman-hand-holding-airplane.png) no-repeat;
     background: url(#{$base-url}/assets/img/woman-hand-holding-airplane.png) no-repeat;
     background-size: cover;
     width: 45rem;
@@ -103,7 +101,6 @@
   &::after {
     content: "";
     position: absolute;
-    // background: url(/assets/img/shadov-line.png) no-repeat;
     background: url(#{$base-url}/assets/img/shadov-line.png) no-repeat;
     background-size: cover;
     width: 28rem;
@@ -115,7 +112,6 @@
   &::before {
     content: "";
     position: absolute;
-    // background: url(/assets/img/woman-hand-holding-airplane.png) no-repeat;
      background: url(#{$base-url}/assets/img/woman-hand-holding-airplane.png) no-repeat;
     background-size: cover;
     width: 32rem;

@@ -347,6 +347,7 @@ section {
   text-align: center;
   font-weight: 500;
   font-size: 32px;
+  transition: all 0.3s ease-in-out;
 }
 .about__wrap a:last-child {
   border-radius: 2.188rem;
@@ -355,6 +356,8 @@ section {
 }
 .about__wrap a:hover {
   background: linear-gradient(to bottom right, #F9A246, #F22532);
+  transform: scale(1.05);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 @media (max-width: 1024px) {
@@ -431,6 +434,11 @@ section {
   }
   .about__wrap a:last-child {
     font-size: 1.375rem;
+  }
+  .about__wrap a:hover {
+    background: linear-gradient(to bottom right, #F22532, #F9A246);
+    box-shadow: none !important;
+    transform: none !important;
   }
   .about-link {
     width: 9.5rem;
@@ -1008,6 +1016,13 @@ section {
   margin: 0 auto;
   font-family: "TT Travels", sans-serif;
   cursor: pointer;
+}
+.agreement__container-link:hover {
+  background-color: rgb(242.25, 242.25, 242.25);
+  color: #f22532;
+  transform: scale(1.05);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
 }
 
 @media (max-width: 490px) {

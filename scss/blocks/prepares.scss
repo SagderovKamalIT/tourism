@@ -5,7 +5,6 @@
   &::before {
     content: "";
   position: absolute;
-  // background: url(/assets/img/tourism-student.png) no-repeat;
   background: url(#{$base-url}/assets/img/tourism-student.png) no-repeat;
   background-position: right center;
   background-size: 34vw auto;
