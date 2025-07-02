@@ -590,7 +590,7 @@ section {
 .audience-wrap::before {
   content: "";
   position: absolute;
-  background: url(/assets/icons/audience-white-arrow.svg) no-repeat;
+  background: url(/tourism/assets/icons/audience-white-arrow.svg) no-repeat;
   background-size: contain;
   background-position: bottom right;
   width: 27.938rem;
@@ -621,7 +621,7 @@ section {
   font-size: 2rem;
   text-align: center;
   color: #191919;
-  background: url(/assets/img/audience-text-background.png) no-repeat;
+  background: url(/tourism/assets/img/audience-text-background.png) no-repeat;
   background-size: contain;
   background-position: center;
   padding: 3.5rem;
@@ -681,7 +681,7 @@ section {
 @media (max-width: 490px) {
   .audience {
     padding: 2rem 0;
-    background: url(/assets/img/audience-background.png) no-repeat right bottom, url(/assets/img/audience-background-mobile.png) no-repeat left top;
+    background: url(/tourism/assets/img/audience-background.png) no-repeat right bottom, url(/tourism/assets/img/audience-background-mobile.png) no-repeat left top;
   }
   .audience-wrap {
     position: relative;
@@ -689,7 +689,7 @@ section {
   .audience-wrap::after {
     content: "";
     position: absolute;
-    background: url(/assets/icons/audience-black-arrow.svg) no-repeat;
+    background: url(/tourism/assets/icons/audience-black-arrow.svg) no-repeat;
     background-size: contain;
     background-position: top left;
     width: 8.938rem;
