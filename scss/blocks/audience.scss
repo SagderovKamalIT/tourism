@@ -1,6 +1,5 @@
 .audience {
   padding: 3.813rem 0 3.375rem 0;
-    //  background: url(/assets/img/audience-background.png) no-repeat;
     background: url(#{$base-url}/assets/img/audience-background.png) no-repeat;
     background-size: contain;
     background-position: bottom right;
@@ -10,7 +9,6 @@
      &::after {
       content: '';
       position: absolute;
-      // background: url(/assets/icons/audience-black-arrow.svg) no-repeat;
       background: url(#{$base-url}/assets/icons/audience-black-arrow.svg) no-repeat;
       background-size: contain;
       background-position: top left;
@@ -24,7 +22,6 @@
       content: '';
       position: absolute;
       background: url(#{$base-url}/assets/icons/audience-white-arrow.svg) no-repeat;
-      // background: url(#{$base-url}/assets/icons/audience-white-arrow.svg) no-repeat;
       background-size: contain;
       background-position: bottom right;
           width: 27.938rem;
@@ -69,7 +66,6 @@ font-size: 2rem;
 text-align: center;
 color: $dark-jungle-green;
 background: url(#{$base-url}/assets/img/audience-text-background.png) no-repeat;
-//  background: url(#{$base-url}/assets/img/audience-text-background.png) no-repeat;
   background-size: contain;
    background-position: center;
   padding: 3.5rem;
@@ -149,7 +145,6 @@ background: url(#{$base-url}/assets/img/audience-text-background.png) no-repeat;
     padding: 2rem 0;
      background:  url(#{$base-url}/assets/img/audience-background.png) no-repeat right bottom,
     url(#{$base-url}/assets/img/audience-background-mobile.png) no-repeat left top;
-    //  background: url(#{$base-url}/assets/img/audience-background.png) no-repeat;
    
 
 

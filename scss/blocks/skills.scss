@@ -86,6 +86,7 @@
 @media (max-width: 490px) {
   .skills {
     padding: 2.5rem 0;
+     background: url(#{$base-url}/assets/img/skills-background-mobile.png) no-repeat bottom / cover;
 
     &__container {
       gap: 1.3rem;

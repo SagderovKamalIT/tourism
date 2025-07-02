@@ -981,6 +981,7 @@ section {
 @media (max-width: 490px) {
   .skills {
     padding: 2.5rem 0;
+    background: url(/tourism/assets/img/skills-background-mobile.png) no-repeat bottom/cover;
   }
   .skills__container {
     gap: 1.3rem;
